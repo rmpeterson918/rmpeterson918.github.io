@@ -7,8 +7,6 @@
     "phone": "(805) 506-9279",
     "summary": "A data scientist and educator passionate about using data to serve the public",
     "location": {
-      //"address": "2712 Broadway St",
-     // "postalCode": "CA 94115",
       "city": "Tigard",
       "countryCode": "US",
       "region": "Oregon"
