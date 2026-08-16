@@ -29,18 +29,18 @@ back_to_top: true # set to false to disable the back to top button
 # Exclude
 # -----------------------------------------------------------------------------
 
-exclude:
-  - _news/announcement_*.md
-  - _pages/blog.md
-  - _posts/
-  # - _projects/?_project.md
-  - assets/jupyter/blog.ipynb
-  - _pages/profiles.md
-  - _pages/teaching.md
-  - _pages/publications.md
-  - _pages/repositories.md
-  - _pages/books.md
-  - _pages/dropdown.md
+# exclude:
+#   - _news/announcement_*.md
+#   - _pages/blog.md
+#   - _posts/
+#   # - _projects/?_project.md
+#   - assets/jupyter/blog.ipynb
+#   - _pages/profiles.md
+#   - _pages/teaching.md
+#   - _pages/publications.md
+#   - _pages/repositories.md
+#   - _pages/books.md
+#   - _pages/dropdown.md
   
 
 # -----------------------------------------------------------------------------
@@ -207,26 +207,26 @@ disqus_shortname: al-folio # put your disqus shortname
 # Newsletter
 # -----------------------------------------------------------------------------
 
-newsletter:
-  enabled: false
-  endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
-  # https://loops.so/docs/forms/custom-form
+# newsletter:
+#   enabled: false
+#   endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
+#   # https://loops.so/docs/forms/custom-form
 
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
 
 collections:
-  books:
-    output: false
-  news:
-    defaults:
-      layout: post
-    output: false
+  # books:
+  #   output: false
+  # news:
+  #   defaults:
+  #     layout: post
+  #   output: false
   projects:
     output: true
-  teachings:
-    output: false
+  # teachings:
+  #   output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -269,9 +269,22 @@ exclude:
   - gems/
   - migrations/
   - vendor
+  - _news/announcement_*.md
+  - _pages/blog.md
+  - _posts/
+  # - _projects/?_project.md
+  - assets/jupyter/blog.ipynb
+  - _pages/profiles.md
+  - _pages/teaching.md
+  - _pages/publications.md
+  - _pages/repositories.md
+  - _pages/books.md
+  - _pages/dropdown.md
+
 keep_files:
   - CNAME
   - .nojekyll
+
 
 # Use al_folio_core as the theme runtime; local files can still override theme files.
 theme: al_folio_core
