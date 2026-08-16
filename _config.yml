@@ -40,6 +40,7 @@ exclude:
   - _pages/publications.md
   - _pages/repositories.md
   - _pages/books.md
+  - _pages/dropdown.md
   
 
 # -----------------------------------------------------------------------------
