@@ -1,50 +1,63 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Rebekah Peterson
+  label: Data Scientist
+  email: petersonrennaissance@gmail.com
+  location: Tigard, OR
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
-
+  summary: A data scientist and educator passionate about using data to serve the public
+  
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: rmpeterson918
     - network: LinkedIn
-      username: example
+      username: rebekah-peterson-461a5b389
 
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+  # address:
+  #   street: 2712 Broadway St
+  #   city: San Francisco
+  #   region: California
+  #   postalCode: CA 94115
+  #   countryCode: US
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
+      - institution: Willamette University
+        location: Salem, OR
+        area: Data Science
+        studyType: MSDS
+        start_date: Aug. 2025
+        end_date: Aug. 2026
         score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+        # courses: "Theory of Relativity"
+        # highlights:
+        #   - Description 1.
+        #   - Description 2.
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: University of Hawai'i at Manoa
+        location: Honolulu, HI
+        area: Ethnomathematics
+        studyType: Graduate Certificate
+        start_date: Jul. 2022
+        end_date: May 2023
+        # highlights:
+        #   - Description 1.
+        #   - Description 2.
+
+      - institution: University of Alaska Southeast
+        location: Juneau, AK
+        area: Secondary Education
+        studyType: Master of Arts in Teaching
+        start_date: Jun. 2017
+        end_date: May 2018
+
+      - institution: California Lutheran University
+        location: Thousand Oaks, CA
+        area: Mathematics
+        studyType: Bachelor of Science
+        area: Fine Art
+        studyType: Bachelor of Art
+        start_date: Aug. 2010
+        end_date: May 2014
 
     Experience:
       - company: Institute for Advanced Study, Princeton University
