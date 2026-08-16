@@ -52,10 +52,8 @@ cv:
 
       - institution: California Lutheran University
         location: Thousand Oaks, CA
-        area: Mathematics
-        studyType: Bachelor of Science
-        area: Fine Art
-        studyType: Bachelor of Art
+        area: Mathematics & Fine Art
+        studyType: Bachelor of Science & Bachelor of Arts
         start_date: Aug. 2010
         end_date: May 2014
 
