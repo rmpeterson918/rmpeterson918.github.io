@@ -1,218 +1,247 @@
 ---
 layout: page
 title: Abortion, Female Genital Cutting/Mutilation, & Maternal Mortality
-description: Intro to R Final Project
-img: assets/img/12.jpg
+description: Intro to R Final Project exploring global health disparities
+img: assets/img/MMRbox.png
 importance: 1
 category: work
 related_publications: false
 ---
 
-# Abortion, Female Genital Cutting/Mutilation, & Maternal Mortality
+<div class="text-muted mb-4">
+  <strong>Rebekah Peterson</strong> | Willamette University<br>
+  <em>DATA 501: Foundations of Data Science with R</em> &bull; Dr. Zechariah Meunier &bull; December 8, 2025
+</div>
 
-Rebekah Peterson
-Willamette University
-DATA 501: Foundations of Data Science with R
-Dr. Zechariah Meunier
-December 8th, 2025
+---
 
-## Introduction 
+## Introduction
 
-	With access to abortion healthcare under threat in the United States, I wanted to explore what kind of connection there is between access to abortion and maternal mortality rates. There are large disparities in maternal health outcomes worldwide; 99% of maternal deaths occur in developing nations (Nour, 2008). Despite high spending, women in the US face worse health outcomes at higher rates than other wealthy countries (Munira Z. Gunja, August 15, 2024). Using data from the Woman Stats Project (Codebook, 2025), my project began with looking at data on abortion access and maternal mortality rates worldwide. In the process of exploration, it seemed that there was another variable connected to increased mortality. This led me back to the Woman Stats Project, where I found data on female genital mutilation. 
-The guiding question for my research is: What is the effect of access to abortion care, and the practice of female genital cutting/mutilation (FGC/M), on maternal mortality rates? To answer my question, I will use the following null and alternative hypotheses. 
-Ho: Access to abortion care and female genital mutilation do not affect maternal mortality. 
-HA: Both access to abortion and female genital mutilation have an impact on maternal mortality rates. 
-Methods
-	My explanatory variables are abortion access and female genital cutting/mutilation. The response variable is the maternal mortality rate. 
-Abortion access varies from safe and legal to illegal under all circumstances. In countries where abortion is legal, there can still be financial burdens or other limitations that restrict access.  The data I used were assigned values from 0 to 4. The description of data assignments from the Woman Stat Project website is as follows: 
+With access to abortion healthcare under threat in the United States, I wanted to explore what kind of connection exists between access to abortion and maternal mortality rates. There are large disparities in maternal health outcomes worldwide; 99% of maternal deaths occur in developing nations (Nour, 2008). Despite high spending, women in the US face worse health outcomes at higher rates than other wealthy countries (Munira Z. Gunja, August 15, 2024). 
 
+Using data from the Woman Stats Project (Codebook, 2025), my project began by looking at data on abortion access and maternal mortality rates worldwide. In the process of exploration, it seemed that there was another variable connected to increased mortality. This led me back to the Woman Stats Project, where I found data on female genital mutilation.
 
-|     Score    |     Description                                                                                                                                                                                                                                                                                                                                                             |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     0        |     Abortion is safe and legal and   not imposed by the state on women (i.e. forced abortions are not an issue).                                                                                                                                                                                                                                                            |
-|     1        |     Abortion is legal (although may   not be available on demand for the asking), or there may be gestational age   restrictions past the first trimester. The law may require parental   permission or a waiting period.                                                                                                                                                   |
-|     2        |     Abortions may be restricted, but   there are many reasons for permission to be given, including financial   reasons.  Spousal permission may also   be required, or the permission of a physician’s committee, or gestational age   restrictions may prohibit abortion in the weeks before the first trimester   has been completed (that is, prior to 12-13 weeks).    |
-|     3        |      Abortions are severely restricted to cases   where the life of the mother is at risk, possibly also rape and incest.                                                                                                                                                                                                                                                   | 
-|     4        |     Abortions are   illegal (you may also take cases where states impose abortions on women,   i.e., forced/coerced abortions).                                                                                                                                                                                                                                             | 
+**Guiding Research Question:** What is the effect of access to abortion care, and the practice of female genital cutting/mutilation (FGC/M), on maternal mortality rates?
 
-** Table 1 **
-(Codebook, 2025)
+* **$H_0$:** Access to abortion care and female genital mutilation do not affect maternal mortality.
+* **$H_A$:** Both access to abortion and female genital mutilation have an impact on maternal mortality rates.
 
-Female genital cutting/mutilation is the practice of cutting or completely removing the external genitalia. The dataset I used combined data on both the legal and cultural acceptance of the practice into a single score ranging from 0 to 6. The description of data assignments from the Woman Stat Project website is as follows:
+---
 
-|     Score    |     Description                                                                                                |
-|--------------|----------------------------------------------------------------------------------------------------------------|
-|     0        |      There is essentially no FGC/M and laws   against the practice are strict, comprehensive, and enforced.    |
-|     1        |      There is very little FGC/M, or laws may not   be comprehensive or enforced well.                          |
-|     2        |     There is very little FGC/M and   laws may not be comprehensive or enforced well.                           |
-|     3        |     FGC/M may be as high as 25% and   laws may not be comprehensive or enforced well.                          |
-|     4        |     FGC/M may be as high as 50% and   laws may not be comprehensive or enforced well.                          |
-|     5        |     FGC/M is highly prevalent and   laws may not be comprehensive or enforced well.                            |
-|     6        |     FGC/M is highly   prevalent, and there are no laws banning the practice.                                   |
+## Methods
 
-** Table 2 **
-(Codebook, 2025)
+My explanatory variables are **abortion access** and **female genital cutting/mutilation (FGC/M)**. The response variable is the **maternal mortality rate (MMR)** (deaths per 100,000 live births per year).
 
-	 The response variable is the maternal mortality rate (MMR). The MMR is out of 100,000 births per year. For clarity on the map, I used a second data set that sorts the MMR into different scalar values. The mortality rates are sorted into each ranking as follows: 
+Abortion access varies from safe and legal to illegal under all circumstances. In countries where abortion is legal, there can still be financial burdens or other limitations that restrict access. The data were assigned ordinal values from 0 to 4 based on Woman Stats Project criteria.
 
-|     Score    |     Description                                            |
-|--------------|------------------------------------------------------------|
-|     0        |      0-10 maternal deaths per 100,000 live births          |
-|     1        |     11-30 maternal deaths per 100,000   live births        |
-|     2        |     31-100 maternal deaths per   100,000 live births       |
-|     3        |     101-300 maternal deaths per   100,000 live births      |
-|     4        |      301+ maternal deaths per 100,000 live births          |
+**Table 1.** *Abortion access classification scale (Woman Stats Project, 2025).*
 
-** Table 3 **
+| Score | Description |
+| :---: | :--- |
+| **0** | Abortion is safe and legal and not imposed by the state on women (i.e. forced abortions are not an issue). |
+| **1** | Abortion is legal (although may not be available on demand), or there may be gestational age restrictions past the first trimester, parental permission, or waiting periods. |
+| **2** | Abortions may be restricted, but there are many reasons for permission (including financial reasons, spousal permission, physician committee approval, or restrictions before 12–13 weeks). |
+| **3** | Abortions are severely restricted to cases where the life of the mother is at risk, possibly also rape and incest. |
+| **4** | Abortions are illegal (also includes cases where states impose forced/coerced abortions on women). |
 
-	Before running a regression or a significance test, the assumptions of normality and homoscedasticity must be checked. Histograms of each data set did not appear to be normal, and I confirmed that they are not normal by using a Shapiro-Wilk test. The p-value was 7.76e-13, and the W value was 0.83 for abortion access. The p-value was 4.712e-14, and the W value was 0.80 for FGC/M.  The p-value was 2.2e-16, and the W value was 0.69 for the maternal mortality rate. 
-	 Because the data are not normally distributed, I used a Brown-Forsythe test to assess homoscedasticity. For abortion access and MMR, the p-value is 4.71e-06, and the F value is 8.24. For FGC/M and MMR, the p-value is 2.80e-05, and the F value is 5.60. 
-	Because my explanatory variables are categorical, a Kruskal-Wallis test was used to assess if there is a difference in the medians. For abortion access and MMR, the p-value is 1.237e-14, the χ^2 value is 71.25, and the degrees of freedom are 4. For FGC/M and MMR, the p-value is 7.204e-07, the χ^2 value is 38.99, and the degrees of freedom are 6.
-	To further examine the relationship between the categories, pairwise Wilcoxon rank-sum tests were conducted. The results are in the tables below. 
+<br>
 
-| Abortion Access and MMR     |
-|-------------------------|--------|----------|--------|---|
-|                         | 0      | 1        | 2      | 3 |
-| 1                       | 1      | -        | -      | - |
-| 2                       | 1      | 0.2226   | -      | - |
-| 3                       | 0.1518 | 2.00e-13 | 0.0069 | - |
-| 4                       | 0.1518 | 4.80e-05 | 0.1518 | 1 |
+Female genital cutting/mutilation is the practice of cutting or completely removing the external genitalia. The dataset combined data on both legal and cultural acceptance of the practice into a single score ranging from 0 to 6.
 
-** Table 4 **
+**Table 2.** *Female genital cutting/mutilation (FGC/M) prevalence scale (Woman Stats Project, 2025).*
 
-| FGC/M and MMR |         |         |         |         |        |        |
-|---------------|---------|---------|---------|---------|--------|--------|
-|               | 0       | 1       | 2       | 3       | 4      | 5      |
-| 1             | 1.0000  | -       | -       | -       | -      | -      |
-| 2             | 0.46341 | 0.1610  | -       | -       | -      | -      |
-| 3             | 0.67289 | 0.46341 | 1.0000  | -       | -      | -      |
-| 4             | 0.46341 | 0.19166 | 0.46341 | 0.31152 | -      | -      |
-| 5             | 0.06793 | 0.00077 | 0.00199 | 0.00493 | 1.0000 | -      |
-| 6             | 0.46341 | 0.07519 | 0.46341 | 0.46341 | 1.0000 | 1.0000 |
+| Score | Description |
+| :---: | :--- |
+| **0** | There is essentially no FGC/M and laws against the practice are strict, comprehensive, and enforced. |
+| **1** | There is very little FGC/M, or laws may not be comprehensive or enforced well. |
+| **2** | There is very little FGC/M and laws may not be comprehensive or enforced well. |
+| **3** | FGC/M may be as high as 25% and laws may not be comprehensive or enforced well. |
+| **4** | FGC/M may be as high as 50% and laws may not be comprehensive or enforced well. |
+| **5** | FGC/M is highly prevalent and laws may not be comprehensive or enforced well. |
+| **6** | FGC/M is highly prevalent, and there are no laws banning the practice. |
 
-** Table 5 **
+<br>
 
-In addition to the basic packages included in R, I used the following packages in my analysis. 
+For clarity on spatial visualizations, a second dataset was used to group MMR into scalar categories:
 
-*	tidyverse (Milt, 2019)
-*	dplyr (Vaughan, 2013)
-*	ggplot2 (Wickham, 2016)
-*	maps (Deckmyn, 2025)
-*	car (Weisberg, 2019)
+**Table 3.** *Maternal Mortality Ratio (MMR) scalar classifications.*
+
+| Score | Description |
+| :---: | :--- |
+| **0** | 0–10 maternal deaths per 100,000 live births |
+| **1** | 11–30 maternal deaths per 100,000 live births |
+| **2** | 31–100 maternal deaths per 100,000 live births |
+| **3** | 101–300 maternal deaths per 100,000 live births |
+| **4** | 301+ maternal deaths per 100,000 live births |
+
+---
+
+### Statistical Assumptions & Testing
+
+Before running regressions or significance tests, assumptions of normality and homoscedasticity were checked:
+* **Shapiro-Wilk Test for Normality:** 
+  * Abortion Access: $W = 0.83$, $p = 7.76 \times 10^{-13}$
+  * FGC/M: $W = 0.80$, $p = 4.71 \times 10^{-14}$
+  * Maternal Mortality Rate: $W = 0.69$, $p = 2.20 \times 10^{-16}$
+* **Brown-Forsythe Test for Homoscedasticity:**
+  * Abortion Access & MMR: $F = 8.24$, $p = 4.71 \times 10^{-6}$
+  * FGC/M & MMR: $F = 5.60$, $p = 2.80 \times 10^{-5}$
+
+Because variables violated normality and homoscedasticity, non-parametric tests were selected:
+* **Kruskal-Wallis Tests:**
+  * Abortion Access & MMR: $\chi^2 = 71.25$, $df = 4$, $p = 1.237 \times 10^{-14}$
+  * FGC/M & MMR: $\chi^2 = 38.99$, $df = 6$, $p = 7.204 \times 10^{-7}$
+* **Pairwise Wilcoxon Rank-Sum Tests:** Evaluated differences across individual scale levels (Tables 4 & 5).
+
+<br>
+
+**Table 4.** *Pairwise Wilcoxon rank-sum test p-values: Abortion Access and MMR.*
+
+| Score | 0 | 1 | 2 | 3 |
+| :---: | :---: | :---: | :---: | :---: |
+| **1** | 1.0000 | — | — | — |
+| **2** | 1.0000 | 0.2226 | — | — |
+| **3** | 0.1518 | $2.00 \times 10^{-13}$ | 0.0069 | — |
+| **4** | 0.1518 | $4.80 \times 10^{-5}$ | 0.1518 | 1.0000 |
+
+<br>
+
+**Table 5.** *Pairwise Wilcoxon rank-sum test p-values: FGC/M and MMR.*
+
+| Score | 0 | 1 | 2 | 3 | 4 | 5 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **1** | 1.0000 | — | — | — | — | — |
+| **2** | 0.4634 | 0.1610 | — | — | — | — |
+| **3** | 0.6729 | 0.4634 | 1.0000 | — | — | — |
+| **4** | 0.4634 | 0.1917 | 0.4634 | 0.3115 | — | — |
+| **5** | 0.0679 | 0.0008 | 0.0020 | 0.0049 | 1.0000 | — |
+| **6** | 0.4634 | 0.0752 | 0.4634 | 0.4634 | 1.0000 | 1.0000 |
+
+<br>
+
+**R Packages Utilized:** `tidyverse` (Wickham et al., 2019), `dplyr` (Wickham et al., 2023), `ggplot2` (Wickham, 2016), `maps` (Deckmyn, 2025), and `car` (Fox & Weisberg, 2019).
+
+---
 
 ## Results
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/MMRbox.png" title="Figure 1" class="img-fluid rounded z-depth-1" %}
+
+### Abortion Access & MMR
+
+<div class="row my-4 justify-content-center">
+    <div class="col-12 col-md-10 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/MMRbox.png" title="Figure 1" class="img-fluid rounded shadow-sm mx-auto d-block" zoomable=true %}
     </div>
 </div>
-<div class="caption">
-    <strong>Figure 1.</strong> 
+<div class="caption text-center mt-2 mb-4">
+    <strong>Figure 1.</strong> Distribution of Maternal Mortality Ratio across Abortion Access scale scores.
 </div>
 
-|     Abortion Score    |     Min    |     Q1      |     Median    |     Q3       |     Max     |
-|-----------------------|------------|-------------|---------------|--------------|-------------|
-|     0                 |     5      |     7.5     |     10        |     26.5     |     43      |
-|     1                 |     2      |     5.0     |     9         |     19.0     |     160     |
-|     2                 |     3      |     7.5     |     22        |     151.0    |     548     |
-|     3                 |     2      |     55.5    |     145       |     385.5    |     1150    |
-|     4                 |     6      |     77.0    |     120       |     293.5    |     1120    |
-** Table 6 **
+**Table 6.** *Summary statistics of MMR across Abortion Access scale scores.*
 
-The box plot and summary statistics shown in Figure 1 and Table 6 show the interaction of abortion access and MMR. There appears to be a significant jump in the number of deaths at a score of 3 and 4. Countries with a score of 0 or 1 have median mortality rates close to 10. Countries with scores of 3 or 4 have median mortality rates exceeding 100 per 100,000 births; notably, their maximum values also exceed 1,100. In the pairwise Wilcoxon rank-sum test (Table 4), there were significant differences in median scores for 1 versus 3 and 4, and for 2 versus 3. There is a very small number of countries that are classified as having a score of 0. This explains why countries with an abortion score of 0 do not have a significantly different median when compared to countries with higher scores; there are simply not enough to be significant. 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/FGMbox.png" title="Figure 2" class="img-fluid rounded z-depth-1" %}
+| Abortion Score | Min | Q1 | Median | Q3 | Max |
+| :---: | ---: | ---: | ---: | ---: | ---: |
+| **0** | 5 | 7.5 | 10.0 | 26.5 | 43 |
+| **1** | 2 | 5.0 | 9.0 | 19.0 | 160 |
+| **2** | 3 | 7.5 | 22.0 | 151.0 | 548 |
+| **3** | 2 | 55.5 | 145.0 | 385.5 | 1,150 |
+| **4** | 6 | 77.0 | 120.0 | 293.5 | 1,120 |
+
+<br>
+
+The box plot and summary statistics (Figure 1, Table 6) show the interaction of abortion access and MMR. There is a marked increase in maternal deaths at scores of 3 and 4. Countries with scores of 0 or 1 have median mortality rates near 10, whereas countries with scores of 3 or 4 exceed medians of 100 per 100,000 live births (with maximum values exceeding 1,100). Pairwise Wilcoxon tests confirmed significant differences in medians between score 1 vs. 3 and 4, and 2 vs. 3. 
+
+---
+
+### Female Genital Cutting/Mutilation & MMR
+
+<div class="row my-4 justify-content-center">
+    <div class="col-12 col-md-10 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/FGMbox.png" title="Figure 2" class="img-fluid rounded shadow-sm mx-auto d-block" zoomable=true %}
     </div>
 </div>
-<div class="caption">
-    <strong>Figure 2.</strong> 
+<div class="caption text-center mt-2 mb-4">
+    <strong>Figure 2.</strong> Distribution of Maternal Mortality Ratio across FGC/M prevalence scale scores.
 </div>
 
-|     FGC/M Scale    |     Min    |     Q1        |     Median    |     Q3        |     Max     |
-|--------------------|------------|---------------|---------------|---------------|-------------|
-|     0              |     4      |     4.75      |     7.0       |     21.25     |     58      |
-|     1              |     2      |     5.00      |     8.0       |     67.00     |     548     |
-|     2              |     2      |     17.00     |     60.0      |     173.00    |     1150    |
-|     3              |     3      |     17.00     |     46.0      |     121.00    |     829     |
-|     4              |     53     |     136.25    |     415.5     |     729.50    |     917     |
-|     5              |     37     |     301.25    |     440.5     |     591.75    |     1140    |
-|     6              |     29     |     67.50     |     369.5     |     639.25    |     1120    |
+**Table 7.** *Summary statistics of MMR across FGC/M prevalence scores.*
 
-** Table 7 **
+| FGC/M Scale | Min | Q1 | Median | Q3 | Max |
+| :---: | ---: | ---: | ---: | ---: | ---: |
+| **0** | 4 | 4.75 | 7.0 | 21.25 | 58 |
+| **1** | 2 | 5.00 | 8.0 | 67.00 | 548 |
+| **2** | 2 | 17.00 | 60.0 | 173.00 | 1,150 |
+| **3** | 3 | 17.00 | 46.0 | 121.00 | 829 |
+| **4** | 53 | 136.25 | 415.5 | 729.50 | 917 |
+| **5** | 37 | 301.25 | 440.5 | 591.75 | 1,140 |
+| **6** | 29 | 67.50 | 369.5 | 639.25 | 1,120 |
 
-The story is very similar when looking at female genital cutting/mutilation. In countries where it is both illegal and uncommon, the median mortality rate is close to zero. In countries where FGC/M happens at rates of 50% and higher, scores of 4 to 6, the median mortality rate is over 300 deaths per 100,000 births. In the pairwise Wilcoxon rank-sum test (Table 5), there was a significant difference in median deaths between countries with a score of 5 and those with scores of 1, 2, and 3. There are very few countries with scores of 0 or 6 (10 altogether), which explains why the difference between countries with scores of 0 and 6 is not statistically significant. 
-	To identify which countries have the lowest or highest MMR, I mapped the scores onto a global heat map. Figure 3 supports Nour’s statement that 99% of the world’s maternal deaths are in developing nations (Nour, 2008). Figure 3, however, does not illustrate the variance among countries with MMRs below 300.
+<br>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/MMRmap.png" title="Figure 3" class="img-fluid rounded z-depth-1" %}
+Where FGC/M is illegal and rare, the median mortality rate is near zero. In countries where FGC/M prevalence reaches 50% or higher (scores 4 to 6), median mortality exceeds 300 per 100,000 births. Pairwise tests indicated significant differences between countries with a score of 5 and those with scores of 1, 2, and 3.
+
+---
+
+### Geographic Distribution & Spatial Comparisons
+
+<div class="row my-4 justify-content-center">
+    <div class="col-12 col-md-10 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/MMRmap.png" title="Figure 3" class="img-fluid rounded shadow-sm mx-auto d-block" zoomable=true %}
     </div>
 </div>
-<div class="caption">
-    <strong>Figure 3.</strong> 
+<div class="caption text-center mt-2 mb-4">
+    <strong>Figure 3.</strong> Global heat map of raw Maternal Mortality Ratio (MMR).
 </div>
 
-	Using the scaled MMR data creates a more nuanced map for countries with an MMR less than 100. Figure 4 still shows the higher death rate in developing nations and also makes it easier to see which nations have MMR numbers under 30. Australia and most of Europe have countries with very low MMR. South Sudan and Chad stand out as countries with very high MMRs, both are over 1,100. 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/MMRscaleMap.png" title="Figure 4" class="img-fluid rounded z-depth-1" %}
+<div class="row my-4 justify-content-center">
+    <div class="col-12 col-md-10 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/MMRscaleMap.png" title="Figure 4" class="img-fluid rounded shadow-sm mx-auto d-block" zoomable=true %}
     </div>
 </div>
-<div class="caption">
-    <strong>Figure 4.</strong> 
+<div class="caption text-center mt-2 mb-4">
+    <strong>Figure 4.</strong> Scaled geographic mapping of Maternal Mortality Ratio (MMR) highlighting variance under 100 deaths per 100k.
 </div>
 
-	The low p-values and high  χ^2 values in each Kruskal-Wallis test show that the null hypothesis is rejected. Abortion access and FGC/M do have an association with MMR. To see that illustrated, compare figures 5 and 6 to figure 4. Most countries that have a deeper blue on figure 4 also have a deeper blue in figures 5 and 6. There are some notable exceptions. China and Poland have abortion scores of 4 and 3, respectively; their MMRs are 29 and 2. This difference may be explained in China by their history of forced abortions under their “one-child” laws. For Poland, they are surrounded by countries that offer legal and safe abortions. As with women crossing state lines in the USA, Polish women may seek care in neighboring countries when needed. 
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/ABOmap.png" title="Figure 5" class="img-fluid rounded z-depth-1" %}
+<div class="row my-4 g-3 align-items-center">
+    <div class="col-12 col-md-6 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/ABOmap.png" title="Figure 5" class="img-fluid rounded shadow-sm mx-auto d-block" zoomable=true %}
+        <div class="caption text-center mt-2">
+            <strong>Figure 5.</strong> Global abortion access scale scores.
+        </div>
+    </div>
+    <div class="col-12 col-md-6 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/FGMmap.png" title="Figure 6" class="img-fluid rounded shadow-sm mx-auto d-block" zoomable=true %}
+        <div class="caption text-center mt-2">
+            <strong>Figure 6.</strong> Global FGC/M prevalence scale scores.
+        </div>
     </div>
 </div>
-<div class="caption">
-    <strong>Figure 5.</strong> 
-</div>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/FGMmap.png" title="Figure 6" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    <strong>Figure 6.</strong> 
-</div>
+<br>
+
+Comparing Figures 5 and 6 with Figure 4 illustrates consistent regional alignment: nations with higher restrictions and cutting prevalence frequently demonstrate higher MMR scores. Notable outliers include China and Poland (high restriction scores of 4 and 3, but low MMRs of 29 and 2), which may be attributed to historical demographic policy in China and access to neighboring European healthcare systems for Polish women.
+
+---
 
 ## Discussion
 
-	It is clear from the data explored that both abortion care access and female genital mutilation have an association with maternal mortality rates. The more restrictions on access to abortion a country has, the higher its maternal mortality rate is likely to be. Likewise, if a country allows female genital mutilation, its maternal mortality rate will probably be higher. The combination of restrictive abortion access and cultural acceptance of FGC/M is particularly fatal, as seen in many African countries, such as Chad. In Chad, their abortion score was 3, or highly restrictive; their FGC/M score was 5, meaning it was highly prevalent, and their mortality rate was 1,140 deaths per 100,000 births. In contrast, among countries with 10 deaths per 100,000 births, the majority had both abortion and FGC/M scores of two or less.  
-	 Abortion is one example of maternal healthcare, but there are many other factors that can contribute to positive or negative outcomes for mothers. General access to healthcare, access to prenatal care, access to adequate nutrition, poverty, the age of the mother at her first child’s birth, number of children, and access to birth control are all known factors in women’s health worldwide (Women Still Face Big Gaps in Access to Health Care, 2013). Exploring any of these factors could add to the picture of maternal health worldwide. Although the variables I examined are all independent, some variables I did not explore may not be independent. For example, many young women in Africa have their first child when they are young teens, and they also experience FGC/M at higher rates, so it is possible that FGC/M is less significant in comparison (Addis Eyeberu 1, 2022).
-	In my analysis, I only looked at one year because the data for FGC/M was only compiled in 2020; looking at changes over time could add support to the results by looking at how MMR changes in the same country over time. There was some acknowledgement within the maternal mortality data that different sources recorded different death rates for the same time and place. Because these data are compiled from many different sources, the accuracy of the data, and therefore the conclusions, will vary by time and location. 
-There are many factors that will impact an individual’s chances of dying during pregnancy or childbirth. Two factors that are outside an individual’s control, but within a society’s control, are restrictions placed on access to abortion and legal and cultural acceptance of female genital cutting/mutilation.
-	This project has analyzed data on access to abortion healthcare, female genital cutting/mutilation practices, and maternal mortality rates worldwide. A very small p-value from running a Kruskal-Wallis and pairwise Wilcox test allows us to conclude that we should reject the null hypothesis. Abortion access and female genital mutilation practices have an association with maternal mortality rates worldwide. Countries that restrict access to abortion and permit female genital cutting increase the risk of death for their expectant mothers. Changing cultural norms around female genital cutting/mutilation, with legal restrictions enforced, along with increasing access to abortion care, are connected to healthier outcomes for maternal health. In addition to improving maternal health, healthier women are linked with healthier overall populations and economies (Grossi, 2024). The more that countries invest in lowering maternal mortality rates, the healthier their communities will be. 
+Both abortion care access and female genital mutilation exhibit strong statistical associations with maternal mortality rates. Highly restrictive abortion legislation and cultural acceptance of FGC/M compound vulnerability—for example, Chad exhibits an abortion score of 3, an FGC/M score of 5, and an MMR of 1,140 per 100,000 live births. Conversely, nations with fewer than 10 deaths per 100,000 live births consistently maintain low restriction scores ($\le 2$).
 
-## References 
+While these findings are significant, maternal mortality is multifaceted. Other confounding factors include prenatal care access, nutrition, baseline poverty, maternal age at first birth, parity, and contraceptive access (Women Still Face Big Gaps in Access to Health Care, 2013; Eyeberu et al., 2022). Furthermore, cross-sectional analysis in a single year (2020) limits longitudinal causal inference across reporting agencies.
 
-Addis Eyeberu , T. (2022, Nov-Dec). Teenage pregnancy and its predictors in Africa: A systematic review and meta-analysis. Retrieved from NIH National Library of Medicine: https://pmc.ncbi.nlm.nih.gov/articles/PMC9682880/
+Nonetheless, policy and cultural factors remain directly actionable. Investing in expanded reproductive care access and enforcing protections against FGC/M are foundational steps toward improving maternal survivability and overall population health (Grossi, 2024).
 
-Codebook. (2025, September). Retrieved from Woman Stats Project: https://womanstats.org/new/codebook/
+---
 
-Deckmyn, R. A. (2025). maps: Draw Geographical Maps. Retrieved from R package version 3.4.3: https://CRAN.R-project.org/package=maps
+## References
 
-Grossi, G. (2024, August 15). AJMC. Retrieved from US Women Face Worst Health Access, Outcomes Among High-Income Nations: https://www.ajmc.com/view/us-women-face-worst-health-access-outcomes-among-high-income-nations
-
-Milt, H. W. (2019). Welcome to the {tidyverse. Journal of Open Source Software, 4(43), 1686.
-
-Munira Z. Gunja, R. M. (August 15, 2024). Health Care for Women: How the U.S. Compares Internationally. The Commonwealth Fund.
-
-Nour, N. M. (2008). An Introduction to Global Women's Health. Reviews in obstetrics & gynecology, 33-37.
-
-Vaughan, H. W. (2013). dplyr: A Grammar of Data Manipulation. (R package version 1.1.4) Retrieved from https://CRAN.R-project.org/package=dplyr
-
-Weisberg, J. F. (2019). An {R} Companion to Applied Regression (Vol. Third). Thousand Oaks, CA: Sage.
-
-Wickham, H. (2016). ggplot2: Elegant Graphics for Data Analysis. Retrieved from https://ggplot2.tidyverse.org
-
-Women Still Face Big Gaps in Access to Health Care. (2013, March 8). Retrieved from Partners in Health: https://www.pih.org/article/women-still-face-big-gaps-in-access-to-health-care
-
-
+* **Addis Eyeberu, T.** (2022). Teenage pregnancy and its predictors in Africa: A systematic review and meta-analysis. *NIH National Library of Medicine*. [PMC9682880](https://pmc.ncbi.nlm.nih.gov/articles/PMC9682880/)
+* **Codebook.** (2025, September). *Woman Stats Project*. [womanstats.org](https://womanstats.org/new/codebook/)
+* **Deckmyn, R. A.** (2025). *maps: Draw Geographical Maps* (R package version 3.4.3). [CRAN](https://CRAN.R-project.org/package=maps)
+* **Fox, J., & Weisberg, S.** (2019). *An R Companion to Applied Regression* (3rd ed.). Sage.
+* **Grossi, G.** (2024, August 15). US Women Face Worst Health Access, Outcomes Among High-Income Nations. *AJMC*. [Article Link](https://www.ajmc.com/view/us-women-face-worst-health-access-outcomes-among-high-income-nations)
+* **Munira Z. Gunja, R. M.** (2024, August 15). Health Care for Women: How the U.S. Compares Internationally. *The Commonwealth Fund*.
+* **Nour, N. M.** (2008). An Introduction to Global Women's Health. *Reviews in Obstetrics & Gynecology*, 33–37.
+* **Partners in Health.** (2013, March 8). *Women Still Face Big Gaps in Access to Health Care*. [pih.org](https://www.pih.org/article/women-still-face-big-gaps-in-access-to-health-care)
+* **Wickham, H. et al.** (2019). Welcome to the tidyverse. *Journal of Open Source Software*, 4(43), 1686.
+* **Wickham, H. et al.** (2023). *dplyr: A Grammar of Data Manipulation* (R package version 1.1.4). [CRAN](https://CRAN.R-project.org/package=dplyr)
+* **Wickham, H.** (2016). *ggplot2: Elegant Graphics for Data Analysis*. Springer-Verlag New York.
