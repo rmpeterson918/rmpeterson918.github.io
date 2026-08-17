@@ -11,7 +11,7 @@ related_publications: false
 In this project from my Intro to Python class, my partner and I chose to look at US healthcare spending costs per capita adjusted for inflation. 
 
 <iframe
-  src="{{ '/assets/html/final_report.html' | relative_url }}
+  src="{{ '/assets/html/final_report.html' | relative_url }}"
   width="100%" 
   height="900px" 
   style="border: none; border-radius: 8px;">
