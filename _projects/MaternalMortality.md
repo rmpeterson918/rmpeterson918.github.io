@@ -2,7 +2,7 @@
 layout: page
 title: Abortion, Female Genital Cutting/Mutilation, & Maternal Mortality
 description: Intro to R Final Project exploring global health disparities
-img: assets/img/MMRbox.png
+img: assets/img/MMRscaleMap.png
 importance: 1
 category: work
 related_publications: false
