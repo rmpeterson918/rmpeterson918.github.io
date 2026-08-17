@@ -36,12 +36,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-abortion-female-genital-cutting-mutilation-amp-maternal-mortality",
+        },{id: "projects-abortion-female-genital-cutting-mutilation-amp-maternal-mortality",
           title: 'Abortion, Female Genital Cutting/Mutilation, &amp;amp; Maternal Mortality',
           description: "Intro to R Final Project exploring global health disparities",
           section: "Projects",handler: () => {
