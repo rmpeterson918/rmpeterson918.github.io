@@ -301,7 +301,7 @@ Because variables violated normality and homoscedasticity, non-parametric tests 
     </div>
 </div>
 <div class="caption text-center mt-2 mb-4">
-    <strong>Figure 1.</strong> Distribution of Maternal Mortality Ratio across Abortion Access scale scores.
+    <strong>Figure 1.</strong> 
 </div>
 
 <p class="font-weight-bold mb-1"><strong>Table 6.</strong> <em>Summary statistics of MMR across Abortion Access scale scores.</em></p>
@@ -376,7 +376,7 @@ In the pairwise Wilcoxon rank-sum test (Table 4), significant differences in med
     </div>
 </div>
 <div class="caption text-center mt-2 mb-4">
-    <strong>Figure 2.</strong> Distribution of Maternal Mortality Ratio across FGC/M prevalence scale scores.
+    <strong>Figure 2.</strong> 
 </div>
 
 <p class="font-weight-bold mb-1"><strong>Table 7.</strong> <em>Summary statistics of MMR across FGC/M prevalence scores.</em></p>
@@ -469,7 +469,7 @@ To identify which countries have the lowest or highest MMR, scores were mapped o
     </div>
 </div>
 <div class="caption text-center mt-2 mb-4">
-    <strong>Figure 3.</strong> Global heat map of raw Maternal Mortality Ratio (MMR).
+    <strong>Figure 3.</strong> 
 </div>
 
 Because raw values compress variance under 300 deaths, the scaled MMR dataset was mapped in Figure 4 to illustrate variation among countries with low baseline mortality. Australia and most of Europe demonstrate very low MMR (< 30), whereas South Sudan and Chad exceed 1,100 deaths per 100,000 live births.
@@ -480,7 +480,7 @@ Because raw values compress variance under 300 deaths, the scaled MMR dataset wa
     </div>
 </div>
 <div class="caption text-center mt-2 mb-4">
-    <strong>Figure 4.</strong> Scaled geographic mapping of Maternal Mortality Ratio (MMR) highlighting variance under 100 deaths per 100k.
+    <strong>Figure 4.</strong> 
 </div>
 
 Comparing Figures 5 and 6 against Figure 4 shows clear spatial correlation: countries with deeper blue tones in Figure 4 consistently align with deeper blue tones in Figures 5 and 6.
@@ -489,13 +489,13 @@ Comparing Figures 5 and 6 against Figure 4 shows clear spatial correlation: coun
     <div class="col-12 col-md-6 text-center">
         {% include figure.liquid loading="eager" path="assets/img/ABOmap.png" title="Figure 5: Global abortion access scale scores" class="img-fluid rounded shadow-sm mx-auto d-block" zoomable=true %}
         <div class="caption text-center mt-2">
-            <strong>Figure 5.</strong> Global abortion access scale scores.
+            <strong>Figure 5.</strong> 
         </div>
     </div>
     <div class="col-12 col-md-6 text-center">
         {% include figure.liquid loading="eager" path="assets/img/FGMmap.png" title="Figure 6: Global FGC/M prevalence scale scores" class="img-fluid rounded shadow-sm mx-auto d-block" zoomable=true %}
         <div class="caption text-center mt-2">
-            <strong>Figure 6.</strong> Global FGC/M prevalence scale scores.
+            <strong>Figure 6.</strong> 
         </div>
     </div>
 </div>
