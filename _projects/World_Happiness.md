@@ -12,13 +12,13 @@ An interactive dashboard built in R and Shiny to visualize and analyze factors i
 
 <div class="container-fluid px-0 my-4" style="width: 100% !important; max-width: 100% !important; min-width: 100% !important; clear: both !important; display: block !important;">
   <div class="d-flex justify-content-end mb-2">
-    <a href="https://rmpeterson918.shinyapps.io/world_happiness_report/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">
+    <a href="https://01a00e38-f0a3-81bc-e1f7-d0b99a1d661a.share.connect.posit.cloud/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">
       <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in New Tab
     </a>
   </div>
   
   <iframe
-    src="https://rmpeterson918.shinyapps.io/world_happiness_report/"
+    src="https://01a00e38-f0a3-81bc-e1f7-d0b99a1d661a.share.connect.posit.cloud/"
     title="World Happiness Report Dashboard"
     width="100%"
     height="950"
