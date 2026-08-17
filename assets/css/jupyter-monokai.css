@@ -392,6 +392,13 @@ div.panel,
   margin: 50px auto;
 }
 
+div.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 5px;
+}
+
 input,
 button,
 select,
