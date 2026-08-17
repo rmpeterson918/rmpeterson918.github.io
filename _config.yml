@@ -226,6 +226,7 @@ collections:
   #   output: false
   projects:
     output: true
+    permalink: /projects/:path/
   # teachings:
   #   output: false
 
@@ -253,6 +254,7 @@ include:
   - _pages/cv.md
   - _pages/projects.md
   - reports
+  - _projects
 exclude:
   - AGENTS.md
   - al-folio-upgrade-report.md
@@ -278,7 +280,6 @@ exclude:
   - _news/announcement_*.md
   - _pages/blog.md
   - _posts/
-  # - _projects/?_project.md
   - assets/jupyter/blog.ipynb
   - _pages/profiles.md
   - _pages/teaching.md
