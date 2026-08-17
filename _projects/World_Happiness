@@ -1,0 +1,45 @@
+---
+layout: page
+title: World Happiness Report
+description: Interactive R Shiny application exploring global happiness trends and predictors.
+img: assets/img/happiness_preview.png
+importance: 3
+category: work
+related_publications: false
+---
+
+An interactive dashboard built in R and Shiny to visualize and analyze factors influencing global happiness metrics across countries and regions.
+
+<div class="row mb-3">
+  <div class="col-12 text-end">
+    <a href="https://01a00e38-f0a3-81bc-e1f7-d0b99a1d661a.share.connect.posit.cloud/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">
+      <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in New Tab
+    </a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="ratio" style="--bs-aspect-ratio: 75%;">
+      <iframe
+        src="https://01a00e38-f0a3-81bc-e1f7-d0b99a1d661a.share.connect.posit.cloud/"
+        title="World Happiness Report Dashboard"
+        style="border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 8px;"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+<div class="caption mt-2">
+  <strong>Interactive Dashboard.</strong> Filter indicators, compare regional trends, and examine underlying predictors directly within the app above.
+</div>
+
+---
+
+### Project Overview
+This project was based on the World Happiness Report. We narrowed our focus to a selection of factors and deployed our own pared-down version of their website. 
+
+### Technical Implementation
+* **Framework:** R Shiny, `plotly`, and `ggplot2`
+* **Data Processing:** `dplyr` and `tidyr`
+* **Deployment:** Containerized hosting via Posit / shinyapps.io
