@@ -28,8 +28,6 @@ An interactive dashboard built in R and Shiny to visualize and analyze factors i
     allowfullscreen>
   </iframe>
 </div>
-  </div>
-</div>
 <div class="caption mt-2">
   <strong>Interactive Dashboard.</strong> Filter indicators, compare regional trends, and examine underlying predictors directly within the app above.
 </div>
