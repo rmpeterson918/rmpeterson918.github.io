@@ -4,11 +4,11 @@ title: Patterns in Healthcare Spending from 1980 to 2014
 description: Intro to Python Final Project
 img: assets/img/12.jpg
 importance: 1
-category: work
+category: school
 related_publications: false
 ---
 
-In this project from my Intro to Python class, my partner and I chose to look at US healthcare spending costs per capita adjusted for inflation. 
+In this project for my Intro to Python class, my partner and I chose to examine US healthcare spending per capita, adjusted for inflation over a 34 year span. 
 
 <iframe
   src="{{ '/reports/final_report.html' | relative_url }}"
