@@ -11,7 +11,6 @@ related_publications: false
 ## Project Overview
 This project was based on the World Happiness Report. My partner and I narrowed our focus to a selection of factors and deployed our own pared-down version of their website. We built an interactive dashboard in R and Shiny to visualize and analyze factors influencing global happiness metrics across countries and regions. This was the final project for our data visualization class.
 
-
 <div class="container-fluid px-0 my-4" style="width: 100% !important; max-width: 100% !important; min-width: 100% !important; clear: both !important; display: block !important;">
   <div class="d-flex justify-content-end mb-2">
     <a href="https://01a00e38-f0a3-81bc-e1f7-d0b99a1d661a.share.connect.posit.cloud/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">
